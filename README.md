@@ -74,15 +74,15 @@ Em uma única placa são integrados: **4 LEDs coloridos**, **4 botões tácteis*
 
 ## Funcionalidades
 
-- ✅ **4 LEDs 5mm PTH** — azul (L1), vermelho (L2), verde (L3) e amarelo (L4)
-- ✅ **4 botões tácteis** (SW1–SW4) — 6×6×5mm PTH, com resistores pull-down 10KΩ
+- ✅ **4 LEDs 5mm PTH** — azul (LED1), vermelho (LED2), verde (LED3) e amarelo (LED4)
+- ✅ **4 botões tácteis** (SW1–SW4) — 6×6×5mm PTH, com resistores pull-up 10KΩ (ativos em nível baixo)
 - ✅ **1 buzzer PTH** (BZ1) — sinalização sonora ativa
-- ✅ **1 potenciômetro 10KΩ** (POT1) — entrada analógica ajustável
-- ✅ **1 sensor LDR** (LDR1) — leitura de luminosidade ambiente
+- ✅ **1 potenciômetro 10KΩ** (RV1) — entrada analógica ajustável
+- ✅ **1 sensor LDR** (R2) — leitura de luminosidade ambiente (divisor com R1 10KΩ)
 - ✅ **1 conector I2C** (J2 — 4 pinos: GND / VCC / SDA / SCL) — expansão para displays, sensores e módulos I2C
 - ✅ **1 borne de terminais KRE 3 pinos** (J1 — D11 / D12 / GND) — conexão externa por parafuso
-- ✅ **Resistores de proteção 220Ω** (R1–R4, R9) — para os LEDs e buzzer
-- ✅ **Resistores pull-down 10KΩ** (R5–R8, R10) — para botões e LDR
+- ✅ **Resistores de proteção 220Ω** (R7–R11) — para os LEDs e buzzer
+- ✅ **Resistores pull-up 10KΩ** (R1, R3–R6) — para LDR e botões
 - ✅ **Encaixe direto** no Arduino Uno R3 — sem soldagem adicional no Arduino
 - ✅ **Todos os componentes PTH** — montagem manual simples
 - ✅ **Made in Brazil** — serigrafia na PCB
@@ -93,17 +93,17 @@ Em uma única placa são integrados: **4 LEDs coloridos**, **4 botões tácteis*
 
 | Periférico | Pino Arduino | Descrição |
 |------------|-------------|-----------|
-| **L1** — LED Azul | D2 | Saída digital |
-| **L2** — LED Vermelho | D3 | Saída digital (PWM) |
-| **L3** — LED Verde | D4 | Saída digital |
-| **L4** — LED Amarelo | D5 | Saída digital (PWM) |
-| **SW1** — Botão 1 | D6 | Entrada digital |
-| **SW2** — Botão 2 | D7 | Entrada digital |
-| **SW3** — Botão 3 | D8 | Entrada digital |
-| **SW4** — Botão 4 | D9 | Entrada digital |
+| **LED1** — LED Azul | D2 | Saída digital |
+| **LED2** — LED Vermelho | D3 | Saída digital (PWM) |
+| **LED3** — LED Verde | D4 | Saída digital |
+| **LED4** — LED Amarelo | D5 | Saída digital (PWM) |
+| **SW1** — Botão 1 | D6 | Entrada digital (LOW = pressionado) |
+| **SW2** — Botão 2 | D7 | Entrada digital (LOW = pressionado) |
+| **SW3** — Botão 3 | D8 | Entrada digital (LOW = pressionado) |
+| **SW4** — Botão 4 | D9 | Entrada digital (LOW = pressionado) |
 | **BZ1** — Buzzer | D10 | Saída digital (PWM) |
-| **POT1** — Potenciômetro | A0 | Entrada analógica |
-| **LDR1** — Sensor de luz | A1 | Entrada analógica |
+| **RV1** — Potenciômetro | A0 | Entrada analógica |
+| **R2** — Sensor de luz (LDR) | A1 | Entrada analógica |
 | **J2 SDA** — I2C Dados | A4 (SDA) | Comunicação I2C |
 | **J2 SCL** — I2C Clock | A5 (SCL) | Comunicação I2C |
 | **J1** — Borne | D11 / D12 / GND | Terminal externo |
@@ -122,8 +122,8 @@ Em uma única placa são integrados: **4 LEDs coloridos**, **4 botões tácteis*
 | **Sensor de Luz** | 1x LDR PTH |
 | **Conector I2C** | 1x header 4 pinos 2,54mm (GND / VCC / SDA / SCL) |
 | **Borne de Terminais** | 1x KRE 3 pinos, passo 5,0mm (D11 / D12 / GND) |
-| **Resistores LEDs/Buzzer** | 220Ω — R1, R2, R3, R4, R9 |
-| **Resistores Pull-down** | 10KΩ — R5, R6, R7, R8, R10 |
+| **Resistores LEDs/Buzzer** | 220Ω — R7, R8, R9, R10, R11 |
+| **Resistores Pull-up** | 10KΩ — R1 (LDR), R3, R4, R5, R6 (botões) |
 | **Tensão de operação** | 5V (alimentado pelo Arduino) |
 | **Tipo de montagem** | PTH — Através-furo |
 | **Ferramenta de Projeto** | KiCad 10 |
@@ -136,18 +136,18 @@ Em uma única placa são integrados: **4 LEDs coloridos**, **4 botões tácteis*
 | Ref | Componente | Valor / Cor | Encapsulamento |
 |-----|-----------|------------|----------------|
 | A1 | Arduino Uno R3 | — | Shield (encaixe) |
-| L1 | LED 5mm | Azul | PTH 5mm |
-| L2 | LED 5mm | Vermelho | PTH 5mm |
-| L3 | LED 5mm | Verde | PTH 5mm |
-| L4 | LED 5mm | Amarelo | PTH 5mm |
+| LED1 | LED 5mm | Azul | PTH 5mm |
+| LED2 | LED 5mm | Vermelho | PTH 5mm |
+| LED3 | LED 5mm | Verde | PTH 5mm |
+| LED4 | LED 5mm | Amarelo | PTH 5mm |
 | SW1–SW4 | Botão Táctil | 6×6×5mm | PTH |
 | BZ1 | Buzzer | Ativo | PTH |
-| POT1 | Potenciômetro | 10KΩ | PTH |
-| LDR1 | Sensor de Luz | LDR | PTH Vertical |
+| RV1 | Potenciômetro | 10KΩ | PTH |
+| R2 | Sensor de Luz (LDR) | LDR 5mm | PTH Vertical |
 | J1 | Borne de Terminais | D11 / D12 / GND | KRE 3 pinos 5,0mm |
 | J2 | Conector I2C | GND / VCC / SDA / SCL | Header 4 pinos 2,54mm |
-| R1, R2, R3, R4, R9 | Resistor de proteção | 220Ω | Axial 0,5W PTH |
-| R5, R6, R7, R8, R10 | Resistor pull-down | 10KΩ | Axial 0,5W PTH |
+| R7, R8, R9, R10, R11 | Resistor de proteção | 220Ω | Axial DIN0204 PTH |
+| R1, R3, R4, R5, R6 | Resistor pull-up | 10KΩ | Axial DIN0204 PTH |
 
 ---
 
@@ -166,11 +166,11 @@ Em uma única placa são integrados: **4 LEDs coloridos**, **4 botões tácteis*
 ## Estrutura do Repositório
 
 ```
-MULTIFUNCTION_SHIELD_V1_2025/
-├── MULTIFUNCTION_SHIELD_V1_2025.kicad_pro   # Arquivo de projeto KiCad
-├── MULTIFUNCTION_SHIELD_V1_2025.kicad_sch   # Esquemático (KiCad 10)
-├── MULTIFUNCTION_SHIELD_V1_2025.kicad_pcb   # Layout da PCB (KiCad 10)
-├── MULTIFUNCTION_SHIELD_V1_2025.kicad_prl   # Configurações locais
+MULTIFUNCTION_SHIELD_V1/
+├── MULTIFUNCTION_SHIELD_V1.kicad_pro        # Arquivo de projeto KiCad
+├── MULTIFUNCTION_SHIELD_V1.kicad_sch        # Esquemático: capa A2 + folhas ARDUINO / ENTRADAS / SAIDAS (KiCad 10)
+├── MULTIFUNCTION_SHIELD_V1.kicad_pcb        # Layout da PCB (KiCad 10)
+├── MULTIFUNCTION_SHIELD_V1.kicad_prl        # Configurações locais
 ├── packages3D/                              # Modelos 3D arquivados
 │   ├── LED 5mm Blue.step
 │   ├── LED 5mm Red.step
@@ -247,7 +247,7 @@ void loop() {
 }
 ```
 
-### Exemplo — Botões com pull-down
+### Exemplo — Botões com pull-up (pressionado = LOW)
 
 ```cpp
 #define BTN1 6
@@ -265,7 +265,7 @@ void setup() {
 }
 
 void loop() {
-  if (digitalRead(BTN1) == HIGH) {
+  if (digitalRead(BTN1) == LOW) {
     tone(BUZZER, 1000, 200); // aciona buzzer ao pressionar SW1
   }
 }
