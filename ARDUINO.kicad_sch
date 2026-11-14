@@ -2098,7 +2098,7 @@
 		(dnp no)
 		(uuid "2f5424a4-db7f-4d94-9770-fd06d7dabe8c")
 		(property "Reference" "A1"
-			(at 69.85 87.63 0)
+			(at 59.69 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2448,7 +2448,7 @@
 		(dnp no)
 		(uuid "52ce0e1f-8cb2-465e-92fd-d84c9d6196af")
 		(property "Reference" "A1"
-			(at 146.05 40.64 0)
+			(at 135.89 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2644,7 +2644,7 @@
 		(dnp no)
 		(uuid "62fed80a-a665-4abe-ad1d-93fa1396857d")
 		(property "Reference" "A1"
-			(at 68.58 40.64 0)
+			(at 59.69 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2928,14 +2928,13 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 87.63 62.2299 90)
+			(at 85.09 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -3007,14 +3006,13 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 87.63 58.4199 90)
+			(at 85.09 56.515 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -3152,7 +3150,7 @@
 		(dnp no)
 		(uuid "f663b3da-2ae3-4a93-9615-6d8242cbd720")
 		(property "Reference" "A1"
-			(at 147.32 87.63 0)
+			(at 135.89 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

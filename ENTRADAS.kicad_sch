@@ -1717,25 +1717,23 @@
 		(dnp no)
 		(uuid "032c7a55-4493-4070-bf06-030c0945a158")
 		(property "Reference" "R5"
-			(at 193.04 59.69 90)
+			(at 194.31 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "10k"
-			(at 191.77 62.23 90)
+			(at 194.31 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "ZAT_Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_10K"
@@ -2132,25 +2130,23 @@
 		(dnp no)
 		(uuid "44953f63-37d6-44a6-bfd1-de406c79cc71")
 		(property "Reference" "R4"
-			(at 168.91 59.69 90)
+			(at 170.18 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "10k"
-			(at 167.64 62.23 90)
+			(at 170.18 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "ZAT_Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_10K"
@@ -2313,7 +2309,7 @@
 		(dnp no)
 		(uuid "5eaa1024-a089-4d13-991b-6afbb276263f")
 		(property "Reference" "SW4"
-			(at 208.026 58.674 0)
+			(at 208.28 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2323,7 +2319,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_6x6x5mm"
-			(at 208.28 60.96 0)
+			(at 208.28 59.055 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2649,7 +2645,7 @@
 		(fields_autoplaced yes)
 		(uuid "8fc556ee-8275-4d92-8631-fa57e4b851ba")
 		(property "Reference" "RV1"
-			(at 73.66 57.15 90)
+			(at 73.66 59.055 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2659,7 +2655,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 73.66 59.69 90)
+			(at 73.66 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2753,7 +2749,7 @@
 		(dnp no)
 		(uuid "8ffe0806-bdb9-41a1-ba90-b33b49b64ca6")
 		(property "Reference" "R2"
-			(at 83.82 93.98 90)
+			(at 83.82 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2763,7 +2759,7 @@
 			)
 		)
 		(property "Value" "LDR_5mm"
-			(at 83.82 96.52 90)
+			(at 83.82 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2932,25 +2928,23 @@
 		(dnp no)
 		(uuid "aa745d32-5b78-40c0-9e19-591839a11415")
 		(property "Reference" "R3"
-			(at 144.78 60.96 90)
+			(at 146.05 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "10k"
-			(at 143.51 63.5 90)
+			(at 146.05 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "ZAT_Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_10K"
@@ -3214,25 +3208,23 @@
 		(dnp no)
 		(uuid "c39725bc-fe33-4760-a200-16dfc17977ff")
 		(property "Reference" "R1"
-			(at 74.93 96.52 90)
+			(at 73.66 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "10k"
-			(at 76.2 99.06 90)
+			(at 73.66 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "ZAT_Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_10K"
@@ -3574,25 +3566,23 @@
 		(dnp no)
 		(uuid "e34b922d-5f30-40cf-9290-24b9af43909b")
 		(property "Reference" "R6"
-			(at 217.17 60.96 90)
+			(at 218.44 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "10k"
-			(at 215.9 63.5 90)
+			(at 218.44 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "ZAT_Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_10K"
